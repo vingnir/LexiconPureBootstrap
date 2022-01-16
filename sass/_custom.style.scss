@@ -1,5 +1,18 @@
 //custom navbar
 
+#main-navigation a{
+  padding-top: 1rem;
+}
+
+#main-navigation hr{
+  display: none;
+}
+
+#main-navigation .nav-item{
+  padding-top: 0.25rem;
+
+}
+
 article{
   padding-top: 2rem;
   padding-right: 2rem;
@@ -71,6 +84,28 @@ article{
 
 //End marketarea accordion
 
+// Responsive
+
+@media screen and (max-width: 991px) {
+
+  .navbar-wrap{
+    
+    text-align: center!important;
+    width:200px;;
+    margin:0 auto;
+  }
+
+  #main-navigation hr{
+  display: block;
+
+  #logo-text{
+    padding-bottom:0;
+  }
+}
+
+}
+
+
 @media screen and (min-width: 768px) {
 	#content {
 		max-height: 500px;
@@ -78,6 +113,8 @@ article{
     overflow-y: scroll;
 	}
 }
+
+
 
 
 
