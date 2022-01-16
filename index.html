@@ -1,89 +1,420 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Johan Ivarsson" />
     <meta name="description" content="Lexicon bootstrap - training excersise" />
-    <meta name="keywords" content="HTML, CSS, Lexicon">
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="HTML, CSS, Lexicon" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Lexicon Bootstrap</title>
-</head>
+  </head>
 
-<body class="d-flex flex-column h-100">
-    
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand ms-5" href="#">Paws of the World</a>
-    <button class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarColor02"
-    aria-controls="navbarColor02"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor02">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Articles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Icon made from http://www.onlinewebfonts.com is licensed by CC BY 3.0-->
+          <a class="navbar-brand ms-5 text-muted" href="#"
+            ><img
+              class="pe-2 pb-1"
+              src="./icons/dog-paw.svg"
+              alt=""
+              height="30"
+              width="30"
+            />Paws of the World</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor02"
+            aria-controls="navbarColor02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  >Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
           </div>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
+          <!-- end navbar-collapse -->
+        </div>
+        <!-- end container -->
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <div class="container-fluid bg-primary">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            class="mx-auto d-block"
+            src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg"
+            alt="kerberos dogs"
+            height="150"
+            width="150"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            class="mx-auto d-none d-md-block"
+            src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg"
+            alt="kerberos dogs"
+            height="150"
+            width="150"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            class="mx-auto d-none d-md-block"
+            src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg"
+            alt="kerberos dogs"
+            height="150"
+            width="150"
+          />
+        </div>
+      </div>
     </div>
-  </div> <!-- end container -->
-</nav>
-</header>
+    <!-- End container -->
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container-fluid bg-primary">
-    <div class="row" id="images-top">
-                <div class="col-md-4"><img class ="mx-auto d-block" src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg" alt="kerberos dogs" height="150" width="150"/></div>
-                <div class="col-md-4"><img class ="mx-auto d-none d-md-block" src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg" alt="kerberos dogs" height="150" width="150"/></div>
-                <div class="col-md-4"><img class ="mx-auto d-none d-md-block" src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg" alt="kerberos dogs" height="150" width="150"/></div>                
-  </div>
+    <main>
+      <!-- Marketing area-->
+      <div
+        class="row align-items-center d-none d-md-block pb-3"
+        style="background-color: rgb(218, 219, 218)"
+      >
+        <!-- TODO-->
+        <div id="marketing-area">
+          <div class="text-center pt-4 pb-3 bg-dark">
+            <h5 class="text-muted">New 3D Movies in the watchdog cinema</h5>
+          </div>
+          <div class="accordion">
+            <ul>
+              <li>
+                <div class="image_title">
+                  <a href="#">Transformers: The Last Knight</a>
+                </div>
+                <a href="https://ibb.co/gGv6QS"
+                  ><img
+                    src="https://image.ibb.co/k7P0kS/transformers4_640x320.jpg"
+                    alt="transformers4_640x320"
+                /></a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Blade Runner 2049</a>
+                </div>
+                <a href="https://ibb.co/cXjfKn"
+                  ><img
+                    src="https://image.ibb.co/ct9rQS/Blade_Runner2049_640x320.jpg"
+                    alt="Blade_Runner2049_640x320"
+                /></a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Guardians of the Galaxy: Vol. 2</a>
+                </div>
+                <a href="https://ibb.co/b4nLkS"
+                  ><img
+                    src="https://image.ibb.co/jAu0kS/GOG2_640x320.jpg"
+                    alt="GOG2_640x320"
+                /></a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Spiderman: Homecoming</a>
+                </div>
+                <a href="https://ibb.co/mC5Uen"
+                  ><img
+                    src="https://image.ibb.co/da7xX7/spiderman_homecoming_640x320.jpg"
+                    alt="spiderman_homecoming_640x320"
+                /></a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Wonder Woman</a>
+                </div>
+                <a href="https://ibb.co/enV1s7"
+                  ><img
+                    src="https://image.ibb.co/dHdAkS/Wonder_Woman_640x320.jpg"
+                    alt="Wonder_Woman_640x320"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End marketing area-->
 
-  </div> <!-- End container -->
-</main>
+      <div class="row position-relative" id="content">
+        <div class="col-md-4 p-5" style="background-color: #f2f2f2">
+          <div class="" style="position: sticky; top: 3em">
+            <section class="ps-4">
+              <h4>Content:</h4>
+              <span class="h6">Latest books</span>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#article-left">A new identity</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#article-left">Stray dogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sub-article-left"
+                    >Explore Canine science</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sub-article-right">Strange dogs</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
 
-<footer class="footer mt-auto py-3 bg-light">
-  <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
-  </div>
-</footer>
+        <div class="col-md-4">
+          <article>
+            <h5>A new identity</h5>
+            <p>
+              That cartoon perfectly summed up the first decades of the Internet
+              – a period during which billions of people went online and found
+              it easy to create new lives: joining communities of like-minded
+              individuals and crafting new identities for themselves.
+            </p>
+            <p>
+              And they could do so without much concern – barring criminal
+              activity – that their online life would intersect with their
+              “real” life in any way.
+            </p>
+            <img
+              class="rounded"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Internet_dog.jpg/220px-Internet_dog.jpg"
+              alt=""
+            />
+          </article>
+          <br />
+          <hr />
 
+          <article>
+            <h5>Explores the bizarre and very funny world of canine science</h5>
+            <i> Vital questions answered include: </i>
+            <br />
+            <ul class="pt-2">
+              <li>Why do dogs fart (but cats don't)?</li>
+              <li>Do dogs feel guilt, love, happiness or jealousy?</li>
+              <li>
+                What does it mean when a dog wags its tail more to the right or
+                the left?
+              </li>
+              <li>Why do dogs poo with their bodies aligned north-to-south?</li>
+              <li>How do dogs smell epilepsy, cancer and human sadness?</li>
+              <li>How many hairs are there on your dog?</li>
+              <li>Do dogs dream? If so, what about?</li>
+              <li>What does your dog hear when you talk?</li>
+              <li>What does your dog hear when you talk?</li>
+            </ul>
+            <span class="h6">
+              Packed with fascinating facts, quirky scientific revelations and
+              weird stories about our furry friends, Dogology offers a secret
+              glimpse inside the canine body and mind.
+            </span>
+          </article>
+          <br />
+          <hr />
+        </div>
 
+        <div class="col md-col-4">
+          <article>
+            <h5>Stray dogs</h5>
+            <p>
+              Created by Tony Fleecs (In My Lifetime; Jeff Steinberg: Champion
+              of Earth; My Little Pony)and Trish Forstner (My Little Pony) for
+              Image Comics (Home Sick Pilots; Saga; I Hate Fairyland).
+              <br />
+              <br />
+              Stray Dogs tells the story of a young dog named Sophie. Sophie,
+              like most dogs, has a genuinely terrible short term memory. Sophie
+              can’t remember what happened to her or how she ended up in her new
+              “home” with all these other dogs that she doesn’t know. Still,
+              even though her fear and confusion, she feels that something
+              terrible has happened, if only she could remember what that
+              terrible thing is.
+            </p>
+            <p>
+              Stay Dogs is a suspense thriller told over a limited 5 Issue
+              series, and it more than achieves everything it sets out to do.
+              The stark contrast between the light, almost playful “Disneyesque”
+              art style and the dark, twisted story work to create a feeling of
+              profound innocence, making the story all that more gut-wrenching
+              to read.
+            </p>
+          </article>
+          <hr />
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
+          <article>
+            <h5>Strange dogs</h5>
+            <p>
+              Cara, a child who has lived on Laconia for eight years, is
+              exploring the forest near her house at a pond she likes. While
+              hanging out near the pond, a pack of alien dogs approach her and
+              leave when she asks them to. Later that day, she feeds a local
+              sunbird mother food from her pocket, because she saw a lady in a
+              certain book do the same in Paris, on Earth. After eating the food
+              from Cara's pocket, the sunbird dies.
+              <br />
+              <br />
+
+              Upset that she killed the sunbird, Cara brings a drone to help
+              retrieve the baby sunbirds and return them to the nest. However,
+              she breaks her mother's drone in the process. During this visit,
+              the pack of dogs returns and steal the dead mother bird.
+              <br />
+              <br />
+
+              Upon Cara's next visit to the pond, she see the mother bird alive
+              with a wax coating around it and eyes of black. Feeling better,
+              Cara asks the dogs if they can repair the drone she broke. The
+              next time she shows up to the pond, the drone has also been
+              repaired. When Cara returns, she learns that her brother, Xan, has
+              been killed by one of the soldiers in a drunk driving accident. In
+              the wake of the incident, she is visited by Duarte, who assures
+              her that the soldier has been punished and will be executed for
+              his crimes. In the night before Xan's burial, Cara takes her
+              brother's body out to the pack of dogs.
+              <br />
+              <br />
+              After waiting the night and a little searching, Cara finds her
+              brother alive, but changed in the same way sunbird was, his
+              movements taking a second to process and his eyes being black.
+              When Cara returns with Xan, Cara's father separates Xan and Cara,
+              slashes the former with a knife, and throws him out on the back
+              porch and blocks the door with a chair. Cara's mother calls the
+              military police. In the meantime, Cara fakes an escape, then
+              returns to her brother, releases him, and they escape into the
+              forest, resting assured that the dogs would resurrect her in the
+              eventuality of death.
+            </p>
+          </article>
+          <hr />
+        </div>
+      </div>
+      <!-- end row-->
+
+      <div class="row" id="contacts">
+        <div id="contact-form" class="col-md-6 p-5">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="number"
+                class="form-control"
+                id="phone"
+                placeholder="Phone"
+              />
+            </div>
+
+            <div class="form-outline pt-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+
+            <div class="form-check p-3">
+              <input type="checkbox" class="form-check-input" id="check" />
+              <label class="form-check-label" for="check"
+                >Subscribe to newsletter</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-md-6 p-5">
+          <img
+            src="https://www.w3schools.com/bootstrap4/ny.jpg"
+            alt="New York"
+            width="600"
+            height="400"
+          />
+        </div>
+      </div>
+      <!-- End row -->
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">Copyright&COPY; Johan Ivarsson</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
 </html>

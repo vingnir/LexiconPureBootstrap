@@ -2,10 +2,12 @@
 
 // Place variable overrides first
 //Import custom variables
+
 @import "./customVariables";
 
 //Custom rules
-@import "./_custom.scss";
+@import "./_custom.style.scss";
 
 //Import custom theme
 @import "./_lux-theme-bootstrap.min";
+
