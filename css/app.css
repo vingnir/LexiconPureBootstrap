@@ -1,20 +1,40 @@
+/*
+* Theme Name: Lexicon Frontend
+* Description: CSS training project
+* Author: Johan Ivarsson
+* Author URI: https://github.com/vingnir
+* Copyright 2022-01 Johan Ivarsson
+* Tags: Lexicon, CSS, SASS, Bootstrap
+* Based on Bootstrap
+***************************************
+* TABLE OF CONTENTS
+* HEADING -  Logo, navigation
+* TOP-CONTENT - Images
+* MARKETAREA - Accordion, Img
+* MAINCONTENT - Articles
+* FOOTER - Copyright
+***/
 @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap);
 #main-navigation a {
   padding-top: 1rem;
 }
 
+.navbar a {
+  font-weight: 300;
+}
+
 #main-navigation hr {
   display: none;
+  margin: 0;
 }
 
 #main-navigation .nav-item {
   padding-top: 0.25rem;
 }
 
-article {
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+#logo-text {
+  font-size: 99%;
+  color: #dadbda;
 }
 
 .accordion {
@@ -96,6 +116,12 @@ article {
   }
 }
 
+article {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 @media screen and (max-width: 991px) {
   .navbar-wrap {
     text-align: center !important;
@@ -105,7 +131,7 @@ article {
   #main-navigation hr {
     display: block;
   }
-  #main-navigation hr #logo-text {
+  #logo-text {
     padding-bottom: 0;
   }
 }
@@ -114,6 +140,21 @@ article {
   #content {
     max-height: 500px;
     overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #caroselImages {
+    padding-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .navbar-toggler-icon {
+    padding-bottom: 5px;
+  }
+  #main-navigation {
+    min-width: 390px;
   }
 }
 
