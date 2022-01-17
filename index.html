@@ -138,10 +138,11 @@
 
     <main>
       <!-- Marketing area-->
+      
       <div
         class="marketing-area row align-items-center d-none d-md-block pb-3"        
       >
-        <!-- TODO-->
+        
         <div id="marketing-area">
           <div class="text-center pt-4 pb-3 bg-dark">
             <h5 class="text-muted">Stream 3D Movies in the watchdog cinema</h5>
@@ -362,9 +363,14 @@
       </div>
       <!-- end row-->
 
-      <div class="row bg-dark text-light" id="contacts">
+      
+
+      <div class="container align-items-center" id="contactArea">
+      <div class="row" id="contacts">
         <div id="contact-form" class="col-md-6 p-5">
           <form>
+              <div class="row">
+              <div class="col md-6">
             <div class="form-group pb-3">
               <label for="name">Name</label>
               <input
@@ -386,6 +392,14 @@
                 placeholder="Enter email"
               />
             </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" rows="2"></textarea>
+            </div>
+
+        </div>
+            <div class="col md-6">
             <div class="form-group pb-3">
               <label for="password">Password</label>
               <input
@@ -406,35 +420,28 @@
                 placeholder="Phone"
               />
             </div>
-
-            <div class="form-outline">
-              <label class="form-label" for="message">Message</label>
-              <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-
-            <div class="form-check p-3">
-              <input type="checkbox" class="form-check-input" id="check" />
-              <label class="form-check-label" for="check"
-                >Subscribe to newsletter</label
-              >
-            </div>
-            <button type="submit" class="btn btn-primary rounded btn-success">
+            <div class="pt-5 px-2">
+                <button type="submit" class="btn btn-primary rounded btn-success">
               Submit
             </button>
             <button type="reset" class="btn btn-primary rounded btn-danger">
               Reset
             </button>
-
+            </div>
+            </div> <!--End col-->
+            </div> <!--End row-->
           </form>
+          <hr class="d-block d-md-none">
         </div>
-
-        <div class="col-md-6 p-1 p-md-5">
+        
+            
+        <div class="col-md-6">
           <div
             id="caroselImages"
-            class="carousel slide carousel-fade p-5"
+            class="carousel slide carousel-fade p-5 mt-4 mb-4"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
+            <div class="carousel-indicators d-none">
               <button
                 type="button"
                 data-bs-target="#caroselImages"
@@ -456,13 +463,13 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner bg-light p-5 carousel-images">
+            <div class="carousel-images carousel-inner bg-light mx-auto p-4">
               <div class="carousel-item active">
                 <img
                   src="./icons/hacker_pug.png"
                   alt=""
-                  width="300"
-                  height="300"
+                  width="200"
+                  height="200"
                   class="d-block rounded mx-auto img-fluid"
                 />
               </div>
@@ -470,8 +477,8 @@
                 <img
                   src="./icons/dog-profile.jpg"
                   alt=""
-                  width="300"
-                  height="300"
+                  width="200"
+                  height="200"
                   class="d-block rounded mx-auto img-fluid"
                 />
               </div>
@@ -479,40 +486,18 @@
                 <img
                   src="icons/kali_dog.jpg"
                   alt=""
-                  width="300"
-                  height="300"
+                  width="200"
+                  height="200"
                   class="d-block rounded mx-auto img-fluid"
                 />
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#caroselImages"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#caroselImages"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            
           </div>
         </div>
-      </div>
-      <!-- End row -->
+      </div> <!-- End row -->
+      </div> <!-- End container -->
+      
     </main>
     <div class="container"></div>
 
