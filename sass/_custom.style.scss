@@ -15,35 +15,37 @@
 * FOOTER - Copyright
 ***/
 
-
 // ---------- Main Nav ----------
 
 #main-navigation a {
   padding-top: 1rem;
 }
 
-.navbar a{
-  font-weight:300;
+.navbar a {
+  font-weight: 300;
 }
 #main-navigation hr {
   display: none;
-  margin:0;
+  margin: 0;
 }
 
 #main-navigation .nav-item {
   padding-top: 0.25rem;
 }
 
-#logo-text{
+#logo-text {
   font-size: 99%;
   color: #dadbda;
 }
 // ---------- End Main Nav ----------
 
-
 // ---------- Marketarea  ----------
-.marketing-area{
-background-color: rgb(218, 219, 218);
+.marketing-area {
+  background-color: rgb(218, 219, 218);
+}
+
+.carousel-images {
+  border-radius: 1em;
 }
 
 .accordion {
@@ -109,24 +111,27 @@ background-color: rgb(218, 219, 218);
 }
 // ---------- End marketarea ----------
 
-
 // ---------- Main content ----------
 article {
   padding-top: 2rem;
   padding-right: 2rem;
   padding-left: 2rem;
 }
-
 // ---------- End Main content ----------
 
 // ---------- Contact form ----------
-#contacts{
+#contacts {
   background-color: rgb(218, 219, 218);
 }
-
-
-
 // ---------- End Contact form ----------
+
+
+// ---------- Footer ----------
+.footer-menu a{
+  color: #666;
+
+}
+// ---------- End Footer ----------
 
 // ---------- Responsive ----------
 @media screen and (max-width: 991px) {
@@ -138,10 +143,10 @@ article {
 
   #main-navigation hr {
     display: block;
-}
-    #logo-text {
-      padding-bottom: 0;
-    } 
+  }
+  #logo-text {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -151,14 +156,10 @@ article {
   }
 }
 @media screen and (max-width: 767px) {
-
   #caroselImages {
-    padding-top: 0!important;
-
+    padding-top: 0 !important;
   }
-
 }
-
 
 @media screen and (max-width: 391px) {
   .navbar-toggler-icon {

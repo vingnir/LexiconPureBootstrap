@@ -41,6 +41,10 @@
   background-color: #dadbda;
 }
 
+.carousel-images {
+  border-radius: 1em;
+}
+
 .accordion {
   max-width: 800px;
   max-height: 320px;
@@ -128,6 +132,10 @@ article {
 
 #contacts {
   background-color: #dadbda;
+}
+
+.footer-menu a {
+  color: #666;
 }
 
 @media screen and (max-width: 991px) {
