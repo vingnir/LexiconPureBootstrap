@@ -122,6 +122,10 @@ article {
   padding-left: 2rem;
 }
 
+#contacts {
+  background-color: #dadbda;
+}
+
 @media screen and (max-width: 991px) {
   .navbar-wrap {
     text-align: center !important;
