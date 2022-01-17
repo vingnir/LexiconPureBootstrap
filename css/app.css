@@ -134,6 +134,18 @@ article {
   background-color: #dadbda;
 }
 
+.btn-success {
+  color: #fff;
+  background-color: #3c684c !important;
+  border-color: #3c684c !important;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #9b4947 !important;
+  border-color: #9b4947 !important;
+}
+
 .footer-menu a {
   color: #666;
 }
