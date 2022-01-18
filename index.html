@@ -137,8 +137,7 @@
     <!-- End .top-content -->
 
     <main>
-      <!-- Marketing area-->
-      
+      <!-- Marketing area-->      
       <div
         class="marketing-area row align-items-center d-none d-md-block pb-3"        
       >
@@ -211,7 +210,7 @@
           <div class="" style="position: sticky; top: 4em">
             <hr class="mb-5" />
             <section class="ps-4" id="content-nav">
-              <h4>Content:</h4>
+              <h4 class="etched-text">Content</h4>
               <span class="h6">Latest books</span>
               <ul>
                 <li class="nav-item">
@@ -229,9 +228,33 @@
                   <a class="nav-link" href="#sub-article-right">Strange dogs</a>
                 </li>
               </ul>
+              <!-- TODO -->
+              <a
+                   onclick="expand()" 
+                  class="nav-link expand-content-icon d-none d-md-block"
+                  id="expandContent"
+                  href="#content"
+                  ><img
+                    class="pe-2 pb-1"
+                    src="./node_modules/bootstrap-icons/icons/arrows-expand.svg"
+                    alt=""
+                    height="30"
+                    width="30"
+                    
+                />            
+            </a>
             </section>
             <hr class="mt-5" />
+             <div id="contentLogo">
+              <img
+            class="mx-auto d-none d-md-block"
+            src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg"
+            alt="kerberos dogs"            
+          />
+          <p class="text-center etched-text">Paws of the world</p>
           </div>
+          </div>
+         
         </div>
         <!-- End Content Menu-->
 
@@ -364,7 +387,7 @@
       <!-- end row-->
 
       
-
+       <!-- Contact area-->
       <div class="container align-items-center" id="contactArea">
       <div class="row" id="contacts">
         <div id="contact-form" class="col-md-6 p-5">
@@ -420,11 +443,11 @@
                 placeholder="Phone"
               />
             </div>
-            <div class="pt-5 px-2">
-                <button type="submit" class="btn btn-primary rounded btn-success">
+            <div id="formButtons" class="fluid d-block pt-5 px-2 ">
+                <button type="submit" class="form-btn btn btn-primary rounded btn-success my-sm-2">
               Submit
             </button>
-            <button type="reset" class="btn btn-primary rounded btn-danger">
+            <button type="reset" class="form-btn btn btn-primary rounded btn-danger">
               Reset
             </button>
             </div>
@@ -496,7 +519,7 @@
           </div>
         </div>
       </div> <!-- End row -->
-      </div> <!-- End container -->
+      </div> <!-- End Contact area-->
       
     </main>
     <div class="container"></div>
@@ -531,6 +554,7 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
   </body>
 </html>

@@ -46,10 +46,6 @@
   max-width: 300px;
 }
 
-#decorationBar {
-  width: 100px;
-}
-
 .accordion {
   max-width: 800px;
   max-height: 320px;
@@ -135,6 +131,24 @@ article {
   padding-left: 2rem;
 }
 
+.etched-text {
+  text-shadow: 0 2px white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b8bec5;
+}
+
+.expand-content-icon {
+  opacity: 40%;
+}
+
+#contentLogo img {
+  height: 150px;
+  width: 150px;
+  opacity: 50%;
+  margin-top: 150px;
+}
+
 #contacts {
   background-color: #dadbda;
   max-height: 25%;
@@ -157,12 +171,19 @@ article {
   color: #fff;
   background-color: #3c684c !important;
   border-color: #3c684c !important;
+  max-width: 90% !important;
 }
 
 .btn-danger {
   color: #fff;
   background-color: #9b4947 !important;
   border-color: #9b4947 !important;
+  max-width: 90% !important;
+}
+
+#formButtons button text {
+  max-width: 90% !important;
+  display: inline-block;
 }
 
 .footer-menu a {
@@ -185,7 +206,7 @@ article {
 
 @media screen and (min-width: 768px) {
   #content {
-    max-height: 600px;
+    height: 600px;
     overflow-y: scroll;
   }
 }
