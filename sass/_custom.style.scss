@@ -17,26 +17,25 @@
 
 // ---------- Main Nav ----------
 
-#main-navigation a {
-  padding-top: 1rem;
-}
+/* #marketing-area .row {
+    --bs-gutter-x: 0;
+  }
+*/
 
 .navbar a {
   font-weight: 300;
 }
-#main-navigation hr {
-  display: none;
-  margin: 0;
+
+#socialMediaIcons{
+  vertical-align: center;
 }
 
-#main-navigation .nav-item {
-  padding-top: 0.25rem;
+.sm-icons{
+  padding: 0.5rem;
 }
 
-#logo-text {
-  font-size: 99%;
-  color: #dadbda;
-}
+
+
 // ---------- End Main Nav ----------
 
 // ---------- Marketarea  ----------
@@ -132,11 +131,14 @@ article {
 opacity: 40%;
 }
 
-#contentLogo img{
-  height:150px;
-  width:150px;
+
+.content-logo img{
+  
+  max-width: 100px;
+  max-height: 100px;
   opacity: 50%;
-  margin-top:150px;
+  margin:0;
+ 
 }
 // ---------- End Main content ----------
 
@@ -174,13 +176,20 @@ opacity: 40%;
     border-color: #9d2320!important;
     
 }
+#formButtons button{
+  padding: 10px;
+
+}
 
 #formButtons button text{
   max-width: 90%!important;
   display: inline-block;
 }
 
-
+#formEnd{
+  margin-top: 2em;
+  padding-top:4px;
+}
 
 // ---------- End Contact form ----------
 
@@ -189,23 +198,49 @@ opacity: 40%;
 
 .footer-menu a{
   color: #666;
+  
 
+}
+
+#footerNav ul li{
+  margin-left:0;
+   margin-right:0!important;
+   opacity: 70%;
+}
+
+
+.footer-copyright{
+  padding: 0.5rem 1rem;
 }
 // ---------- End Footer ----------
 
 // ---------- Responsive ----------
+
+ @media screen and (min-width: 991px) {
+  .nav-item{
+  height: 40px !important;
+  
+}
+  }
+
+
 @media screen and (max-width: 991px) {
   .navbar-wrap {
     text-align: center !important;
     width: 200px;
     margin: 0 auto;
-  }
+  } 
 
-  #main-navigation hr {
+   #logoText {
+    text-align: center!important;
+    margin: 0 auto;
+  }
+  #navigation hr {
     display: block;
   }
-  #logo-text {
+  #textLogo {
     padding-bottom: 0;
+    text-align: center!important;
   }
 }
 
@@ -214,11 +249,20 @@ opacity: 40%;
     height: 600px;
     overflow-y: scroll;
   }
+
+  
   
 }
 @media screen and (max-width: 767px) {
   #caroselImages {
     padding-top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 404px) {
+ 
+  #logoText hr {
+    display: none;
   }
 }
 
@@ -229,6 +273,7 @@ opacity: 40%;
 
   #main-navigation {
     min-width: 390px;
+    padding: 0;
   }
 }
 // ---------- End responsive ----------

@@ -12,26 +12,18 @@
   </head>
 
   <body class="h-100">
+    <div class="container-fluid">
     <!-- Main Nav -->
+    <div class="row bg-dark">
+      <div class="col p-2">
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark pt-1 pb-0"
-        id="main-navigation"
+        class="navbar navbar-expand-lg navbar-dark pt-1 pb-0"
+        id="navigation"
       >
-        <div class="container-fluid">
-          <!-- Icon made from http://www.onlinewebfonts.com is licensed by CC BY 3.0-->
-          <a class="navbar-brand ms-lg-4 pb-3" href="#" id="logo-text"
-            ><img
-              class="pe-2 pb-1"
-              src="./icons/dog-paw.svg"
-              alt=""
-              height="40"
-              width="40"
-            /></a
-          >
-          <span class="text-center etched-text text-muted">Paws of the world</span>
+        
           <button
-            class="navbar-toggler"
+            class="navbar-toggler" style="border:none; padding-left: 1rem;"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarColor02"
@@ -41,71 +33,93 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <div class="text-center" id="logoText">
+          <!-- Icon made from http://www.onlinewebfonts.com is licensed by CC BY 3.0-->
+          <hr>
+            <img 
+            class="m-0 ms-lg-3 pt-1"             
+              src="./icons/dog-paw.svg"
+              alt=""
+              height="30"
+              width="30"
+              style="vertical-align: top;"
+            />
+          
+          <span class="text-center etched-text text-muted ms-lg-3">Paws of the world</span>
+
+          </div>
+
           <div class="collapse navbar-collapse navbar-wrap" id="navbarColor02">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <hr />
+                <hr class="d-lg-none"/>
                 <a class="nav-link active" href="#"
                   >Home
                   <span class="visually-hidden">(current)</span>
                 </a>
-                <hr />
+              
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#content-nav">Articles</a>
-                <hr />
+               <hr class="d-lg-none"/>
+                <a class="nav-link" href="#content">Articles</a>
+               
               </li>
 
               <li class="nav-item">
+                <hr class="d-lg-none"/>
                 <a class="nav-link" href="#contacts">Contact</a>
-                <hr />
+                
               </li>
 
-              <li>
+              <li class="nav-item" id="socialMediaIcons">
+                 <hr class="d-lg-none"/>
                 <a
-                  class="nav-link d-inline-block"
+                  class="d-inline-block sm-icons"
                   href="https://www.linkedin.com/in/johan-ivarsson-b1915b92/"
                   ><img
-                    class="pe-2 pb-1"
+                    
                     src="./node_modules/bootstrap-icons/icons/linkedin.svg"
                     alt=""
-                    height="30"
-                    width="30"
+                    height="20"
+                    width="20"
                 /></a>
 
                 <a
-                  class="nav-link d-inline-block"
+                  class="d-inline-block sm-icons"
                   href="https://twitter.com/Vingnir3"
                   ><img
-                    class="pe-2 pb-1"
+                    class=""
                     src="./node_modules/bootstrap-icons/icons/twitter.svg"
                     alt=""
-                    height="30"
-                    width="30"
+                    height="20"
+                    width="20"
                 /></a>
 
                 <a
-                  class="nav-link d-inline-block"
+                  class="d-inline-block sm-icons"
                   href="https://github.com/vingnir"
                   ><img
-                    class="pe-2 pb-1"
+                    
                     src="./node_modules/bootstrap-icons/icons/github.svg"
                     alt=""
-                    height="30"
-                    width="30"
+                    height="20"
+                    width="20"
                 /></a>
               </li>
             </ul>
           </div>
-        </div>
+       
       </nav>
     </header>
-    <!-- End Main Nav -->
+    </div>
+    </div> <!-- End row Main Nav -->
+    
 
     <!-- Begin top content  -->
-    <div class="container-fluid d-block bg-primary top-content">
-      <div class="row">
+    
+      <div class="row bg-primary top-content">
         <div class="col-md-4">
           <img
             class="mx-auto d-block"
@@ -134,19 +148,20 @@
           />
         </div>
       </div>
-    </div>
+    
     <!-- End .top-content -->
 
-    <main>
+  
       <!-- Marketing area-->      
       <div
-        class="marketing-area row align-items-center d-none d-md-block pb-3"        
+        class="row marketing-area align-items-center d-none d-md-block pb-3"        
       >
         
-        <div id="marketing-area">
-          <div class="text-center pt-4 pb-3 bg-dark">
+        
+          <div class="col text-center pt-4 pb-3 bg-dark">
             <h5 class="text-muted">Stream 3D Movies in the watchdog cinema</h5>
           </div>
+          <div class="col" id="marketing-area">
           <div class="accordion">
             <ul>
               <li>
@@ -201,19 +216,20 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <!--End marketing area-->
+        </div> <!--End col marketing area-->
+      </div>  <!--End row marketing area-->
+     
 
       <!-- Content Menu-->
-      <div class="row position-relative" id="content">
-        <div class="col-md-4 p-5" style="background-color: #f2f2f2">
-          <div class="" style="position: sticky; top: 4em">
-            <hr class="mb-5" />
-            <section class="ps-4" id="content-nav">
+      
+      <div class="row" id="content">
+        <div class="col-lg-4 w-md-25 px-lg-5 mx-auto" style="background-color: #f2f2f2">
+          <div class="w-75 w-lg-100 mx-auto mx-lg-3" style="position: sticky; top: 3rem">
+            <hr class="my-4" />
+            
               <h4 class="etched-text">Content</h4>
               <span class="h6">Latest books</span>
-              <ul>
+              <ul class="pt-3">
                 <li class="nav-item">
                   <a class="nav-link" href="#article-left">A new identity</a>
                 </li>
@@ -229,38 +245,30 @@
                   <a class="nav-link" href="#sub-article-right">Strange dogs</a>
                 </li>
               </ul>
-              <!-- TODO -->
-              <a
-                   onclick="expand()" 
-                  class="nav-link expand-content-icon d-none d-md-block"
-                  id="expandContent"
-                  href="#content"
-                  ><img
-                    class="pe-2 pb-1"
-                    src="./node_modules/bootstrap-icons/icons/arrows-expand.svg"
-                    alt=""
-                    height="30"
-                    width="30"
-                    
-                />            
-            </a>
-            </section>
-            <hr class="mt-5" />
-             <div id="contentLogo" class="d-none d-md-block">
-              <img
-            class="mx-auto d-none d-md-block"
+                <div class="pb-2">
+                  <hr class="mt-2"/></div>
+              <div class="d-none d-lg-block pt-2 text-center content-logo">
+            
+           
+            <img
+            class="mx-auto d-md-block pt-4"
             src="https://svg-clipart.com/svg/black/gk1SxbT-kerberos-vector.svg"
             alt="kerberos dogs"            
           />
-          <p class="text-center etched-text">Paws of the world</p>
-          </div>
+          <p class="etched-text">Paws of the world</p>
+          
+            </div>
+
+              
+              
+            
           </div>
          
         </div>
         <!-- End Content Menu-->
 
         <!-- Articles -->
-        <div class="col-md-4">
+        <div class="col-lg-8 bg-white">
           <article id="article-left">
             <h5>A new identity</h5>
             <p>
@@ -309,9 +317,9 @@
           </article>
           <br />
           <hr />
-        </div>
+        
 
-        <div class="col md-col-4">
+        
           <article id="article-right">
             <h5>Stray dogs</h5>
             <p>
@@ -386,16 +394,20 @@
         </div>
       </div>
       <!-- end row-->
+      
 
       
        <!-- Contact area-->
-      <div class="container align-items-center" id="contactArea">
+      
       <div class="row" id="contacts">
-        <div id="contact-form" class="col-md-6 p-5">
+        
+        <div class="col-md-6 p-5 align-self-center">
+           <div class="row">
+
+            <div class="col-6">
+              
             <span class="text-center etched-text text-muted">Contact us</span>
-          <form>
-              <div class="row">
-              <div class="col md-6">
+          <form id="contactForm">         
             <div class="form-group pb-3">
               <label for="name">Name</label>
               <input
@@ -418,13 +430,6 @@
               />
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="message">Message</label>
-              <textarea class="form-control" id="message" rows="2"></textarea>
-            </div>
-
-        </div>
-            <div class="col md-6">
             <div class="form-group pb-3">
               <label for="password">Password</label>
               <input
@@ -435,29 +440,55 @@
                 placeholder="Password"
               />
             </div>
-
-            <div class="form-group pb-3">
+          </form>
+            </div> <!-- end col password-->
+              
+                      
+            <div class="col-6" id="formEnd">
+              <div class="form-group pb-3">
               <label for="phone">Phone</label>
               <input
                 type="number"
                 class="form-control"
                 id="phone"
                 placeholder="Phone"
+                form="contactForm"
               />
             </div>
+
+            <div class="form-group pb-3">
+              <label  for="message">Message</label>
+              <textarea form="contactForm"
+              class="form-control"
+              id="message"
+              rows="2">
+              </textarea>
+            </div>
+
             <div id="formButtons" class="fluid d-block px-2 ">
-                <button type="submit" class="form-btn btn btn-primary rounded btn-success my-sm-2">
+                <button type="submit" class="form-btn btn btn-primary rounded btn-success mt-1" 
+                form="contactForm">
+                  
               Submit
             </button>
-            <button type="reset" class="form-btn btn btn-primary rounded btn-danger">
+            <button type="reset" class="form-btn btn btn-primary rounded btn-danger mt-1"
+            form="contactForm">
               Reset
             </button>
-            </div>
-            </div> <!--End col-->
-            </div> <!--End row-->
-          </form>
+            </div>    
+             
+          </div> <!-- end col message--> 
+                        
+          </div> <!-- End row -->
+          
+          </div> <!-- End COL -->
+          
+          
+          
+          
+         
           <hr class="d-block d-md-none">
-        </div>
+        
         
             
         <div class="col-md-6">
@@ -487,6 +518,8 @@
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
+
+              
             </div>
             <div class="carousel-images carousel-inner bg-light mx-auto p-4">
               <div class="carousel-item active">
@@ -498,6 +531,8 @@
                   class="d-block rounded mx-auto img-fluid"
                 />
               </div>
+
+              
               <div class="carousel-item">
                 <img
                   src="./icons/dog-profile.jpg"
@@ -515,37 +550,53 @@
                   height="200"
                   class="d-block rounded mx-auto img-fluid"
                 />
-              </div>
-            </div>
+              </div>            
+            </div> <!-- end carousel inner -->
              
-          </div>
-        </div>
-      </div> <!-- End row -->
-      </div> <!-- End Contact area-->
+          </div> <!-- end carousel images -->
+
+        </div> <!-- end col carousel -->
+        </div> <!-- End row contacts -->
+     
       
-    </main>
-    <div class="container"></div>
-
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container d-flex justify-content px-4">
-        <span class="text-muted pt-2"
-          >Copyright&COPY; | Johan Ivarsson | All rights reserved
-        </span>
-
-        <ul class="nav nav-pills ms-auto footer-menu">
+   <footer>
+    <div class="row p-3 text-center">  
+          <div class="col align-self-center text-center" id="footerNav">
+          <ul class="nav nav-pills justify-content-center">
           <li class="nav-item">
             <a class="nav-link" href="#">Main Menu</a>
           </li>
+           <li class="nav-link">
+            |
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#content">Articles</a>
+          </li>
+          <li class="nav-link splitters">
+            |
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
-    </footer>
+        </div>
+        <!-- Force next columns to break to new line -->
+    <div class="w-100"></div>
+         <div class="col align-self-center">
+    <span class="text-muted"
+          >Copyright&COPY; | Johan Ivarsson | All rights reserved
+       </span>
+        </div>
+       </div> <!-- end row -->
 
+        </footer>
+       
+        
+      
+     
+    
+
+   </div> <!-- end container -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

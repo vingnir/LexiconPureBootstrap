@@ -14,27 +14,21 @@
 * MAINCONTENT - Articles
 * FOOTER - Copyright
 ***/
+/* #marketing-area .row {
+    --bs-gutter-x: 0;
+  }
+*/
 @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap);
-#main-navigation a {
-  padding-top: 1rem;
-}
-
 .navbar a {
   font-weight: 300;
 }
 
-#main-navigation hr {
-  display: none;
-  margin: 0;
+#socialMediaIcons {
+  vertical-align: center;
 }
 
-#main-navigation .nav-item {
-  padding-top: 0.25rem;
-}
-
-#logo-text {
-  font-size: 99%;
-  color: #dadbda;
+.sm-icons {
+  padding: 0.5rem;
 }
 
 .marketing-area {
@@ -142,11 +136,11 @@ article {
   opacity: 40%;
 }
 
-#contentLogo img {
-  height: 150px;
-  width: 150px;
+.content-logo img {
+  max-width: 100px;
+  max-height: 100px;
   opacity: 50%;
-  margin-top: 150px;
+  margin: 0;
 }
 
 #contacts {
@@ -180,13 +174,38 @@ article {
   border-color: #9d2320 !important;
 }
 
+#formButtons button {
+  padding: 10px;
+}
+
 #formButtons button text {
   max-width: 90% !important;
   display: inline-block;
 }
 
+#formEnd {
+  margin-top: 2em;
+  padding-top: 4px;
+}
+
 .footer-menu a {
   color: #666;
+}
+
+#footerNav ul li {
+  margin-left: 0;
+  margin-right: 0 !important;
+  opacity: 70%;
+}
+
+.footer-copyright {
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 991px) {
+  .nav-item {
+    height: 40px !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -195,11 +214,16 @@ article {
     width: 200px;
     margin: 0 auto;
   }
-  #main-navigation hr {
+  #logoText {
+    text-align: center !important;
+    margin: 0 auto;
+  }
+  #navigation hr {
     display: block;
   }
-  #logo-text {
+  #textLogo {
     padding-bottom: 0;
+    text-align: center !important;
   }
 }
 
@@ -216,12 +240,19 @@ article {
   }
 }
 
+@media screen and (min-width: 404px) {
+  #logoText hr {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 391px) {
   .navbar-toggler-icon {
     padding-bottom: 5px;
   }
   #main-navigation {
     min-width: 390px;
+    padding: 0;
   }
 }
 
