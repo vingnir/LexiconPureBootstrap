@@ -241,8 +241,14 @@ textarea {
   }
 }
 
-@media screen and (min-width: 404px) {
+@media screen and (min-width: 400px) {
   #logoText hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #separatorArticel {
     display: none;
   }
 }
@@ -250,6 +256,25 @@ textarea {
 @media screen and (max-width: 391px) {
   .navbar-toggler-icon {
     padding-bottom: 5px;
+  }
+  #logoText hr {
+    display: none;
+  }
+  #logoText {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+  }
+  #logoText img {
+    padding-bottom: 8px;
+  }
+  #logoText .etched-text {
+    text-shadow: 0 1px white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #b8bec5;
+  }
+  #logoText span {
+    display: inline;
   }
   #main-navigation {
     min-width: 390px;
