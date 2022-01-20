@@ -20,7 +20,7 @@
 */
 @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap);
 body {
-  padding-top: 56px;
+  padding-top: 54px;
 }
 
 /* hide scrollbar but allow scrolling */
@@ -268,6 +268,9 @@ textarea {
 @media screen and (max-width: 400px) {
   #separatorArticel {
     display: none;
+  }
+  body {
+    padding-top: 54px;
   }
 }
 
