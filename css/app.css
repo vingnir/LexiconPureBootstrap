@@ -156,7 +156,8 @@ article {
   max-height: 70%;
 }
 
-#contacts input, textarea {
+#contacts input,
+textarea {
   max-width: 300px;
   height: 70%;
 }
