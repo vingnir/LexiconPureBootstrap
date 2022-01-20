@@ -15,26 +15,25 @@
 * FOOTER - Copyright
 ***/
 
-// ---------- Main Nav ----------
-
-/* #marketing-area .row {
-    --bs-gutter-x: 0;
-  }
-*/
-body{
-        padding-top: 54px;
-    }
+/* ---------- Global ---------- */
+body {
+  padding-top: 54px;
+}
 
 /* hide scrollbar but allow scrolling */
 body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+/* ---------- End Global ---------- */
+
+
+/* ---------- Main Nav ---------- */
 .navbar a {
   font-weight: 300;
 }
@@ -46,10 +45,10 @@ body::-webkit-scrollbar {
 .sm-icons {
   padding: 0.5rem;
 }
+/* ---------- End Main Nav ---------- */
 
-// ---------- End Main Nav ----------
 
-// ---------- Marketarea  ----------
+/* ---------- Marketarea  ---------- */
 .marketing-area {
   background-color: rgb(218, 219, 218);
 }
@@ -132,10 +131,10 @@ body::-webkit-scrollbar {
     transform: rotate(0deg) scale(1);
   }
 }
-// ---------- End marketarea ----------
+/* ---------- End marketarea ---------- */
 
-// ---------- Main content ----------
 
+/* ---------- Main content ---------- */
 article {
   padding-top: 2rem;
   padding-right: 2rem;
@@ -159,9 +158,10 @@ article {
   opacity: 50%;
   margin: 0;
 }
-// ---------- End Main content ----------
+/* ---------- End Main content ---------- */
 
-// ---------- Contact form ----------
+
+/* ---------- Contact form ---------- */
 #contacts {
   background-color: rgb(218, 219, 218);
   max-height: 25%;
@@ -205,11 +205,10 @@ textarea {
   margin-top: 2em;
   padding-top: 4px;
 }
+/* ---------- End Contact form ---------- */
 
-// ---------- End Contact form ----------
 
-// ---------- Footer ----------
-
+/* ---------- Footer ---------- */
 .footer-menu a {
   color: #666;
 }
@@ -223,9 +222,10 @@ textarea {
 .footer-copyright {
   padding: 0.5rem 1rem;
 }
-// ---------- End Footer ----------
+/* ---------- End Footer ---------- */
 
-// ---------- Responsive ----------
+
+/* ---------- Responsive ---------- */
 
 @media screen and (min-width: 991px) {
   .nav-item {
@@ -271,16 +271,11 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 400px) {
   #separatorArticel {
     display: none;
-   
   }
-
-  
 }
-
 
 @media screen and (max-width: 391px) {
   .navbar-toggler-icon {
@@ -292,23 +287,22 @@ textarea {
   }
 
   #logoText {
-    padding-top:0.5rem;
-    padding-right:1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
   }
 
   #logoText img {
-    padding-bottom:8px;
+    padding-bottom: 8px;
   }
 
   #logoText .etched-text {
-   text-shadow: 0 1px white;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #b8bec5;
-}
+    text-shadow: 0 1px white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #b8bec5;
+  }
 
-  #logoText span{
-    
+  #logoText span {
     display: inline;
   }
 
@@ -317,4 +311,4 @@ textarea {
     padding: 0;
   }
 }
-// ---------- End responsive ----------
+/* ---------- End responsive ----------  */

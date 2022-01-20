@@ -1,5 +1,3 @@
-
-
 function expand() {
   var content = document.getElementById("content");
   var heightContent = document.getElementById("content").offsetHeight;
