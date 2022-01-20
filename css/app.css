@@ -269,9 +269,6 @@ textarea {
   #separatorArticel {
     display: none;
   }
-  body {
-    padding-top: 54px;
-  }
 }
 
 @media screen and (max-width: 391px) {
